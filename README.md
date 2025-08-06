@@ -20,17 +20,20 @@ The proliferation of high-spatial-resolution remote sensing data is transforming
 ![framework](images/fig8.jpg)
 
 ## MMdetection
-The version of causal_conv1d can be found here. {[MMDetection](https://github.com/open-mmlab/mmdetection)} 
+MMDetection is a PyTorch-based object detection toolbox developed by open-mmlab. This work is developed based on MMDetection. ​For reproduction, add the CCViM module from the project directory to the mmdet/models/backbones folder, replacing backbone networks like R50 or Swin when training MaskFormer. The codebase can be found here. {[MMDetection](https://github.com/open-mmlab/mmdetection)} 
 
 ## Main Environments
 ```bash
 conda create -n CrownViM python=3.8
 conda activate CrownViM
-pip install torch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 pip install mamba_ssm==1.0.1  # mmamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 The version of causal_conv1d can be found here. {[causal_conv1d](https://github.com/Dao-AILab/causal-conv1d/releases)} 
 The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/state-spaces/mamba/releases/)}
 
+## Prepare the dataset
+- The OAM-TCD Dataset, can be found here {[OAM-TCD](https://huggingface.co/restor)}.
+- The Single-tree Segmentation Dataset (SSD) can be found here {[SSD](https://aistudio.baidu.com/datasetdetail/274032/0)}.
 
