@@ -39,4 +39,4 @@ The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/stat
 
 ## Acknowledgments
 
-We thank the authors of [CCViM-UNet](https://github.com/zymissy/CCViM), [MMDetection]([https://github.com/open-mmlab/mmdetection]) and [LocalMamba](https://github.com/hunto/LocalMamba) for their open-source codes.
+We thank the authors of [CCViM-UNet](https://github.com/zymissy/CCViM), [MMDetection](https://github.com/open-mmlab/mmdetection) and [LocalMamba](https://github.com/hunto/LocalMamba) for their open-source codes.
